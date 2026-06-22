@@ -187,7 +187,8 @@ THINGS YOU MUST NEVER DO
 """
 # Create OpenAI client
 client = AsyncOpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
+    api_key=os.getenv("GROK_API_KEY"),
+    base_url="https://api.x.ai/v1"
 )
 
 
